@@ -1,0 +1,61 @@
+:root {
+	--colorPrimario: #284b63;
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: "Roboto";
+}
+.contenedor {
+	max-width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.contenido-principal {
+	margin: 50px auto;
+}
+img {
+	max-width: 100%;
+}
+.titulo {
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: auto;
+	gap: 20px;
+}
+.card {
+	border-radius: 15px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card img {
+	border-radius: 15px 15px 0 0;
+}
+.card .contenido {
+	padding: 20px;
+}
+.boton {
+	display: block;
+	background-color: var(--colorPrimario);
+	padding: 15px;
+	text-align: center;
+	border-radius: 15px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
